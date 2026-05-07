@@ -2127,10 +2127,23 @@ end
 		end
 		
 				local TabSelect = Make("Button", MainScroll, {
-			Size = UDim2.new(1, 0, 0, 26),
-			ClipsDescendants = true
-		})
-		
+	Size = UDim2.new(1,0,0,24)
+})
+Make("Corner", TabSelect)
+local TabStroke = Instance.new("UIStroke")
+TabStroke.Thickness = 1.6
+TabStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+TabStroke.Color = Color3.new(1,1,1)
+TabStroke.Parent = TabSelect
+
+local TabGradient = Instance.new("UIGradient")
+TabGradient.Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(170,120,60)),
+	ColorSequenceKeypoint.new(0.5, Color3.fromRGB(140,95,45)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
+}
+TabGradient.Rotation = 0
+TabGradient.Parent = TabStroke		
 		
 		local LabelTitle = InsertTheme(Create("TextLabel", TabSelect, {
 			Size = UDim2.new(1, TIcon and -25 or -15, 1),
