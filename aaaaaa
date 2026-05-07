@@ -2254,38 +2254,7 @@ Make("Corner", TabSelect)
 
 	return Tab
 end
-	function Window:MakePrivateTab(Configs)
-	local TName = Configs[1] or Configs.Title or "Private Tab"
-	local TIcon = Configs[2] or Configs.Icon or ""
-	local AllowUsers = Configs.AllowUsers or Configs.Allowed or Configs.Users or {}
-
-	local LocalPlayerName = Player.Name
-	local LocalDisplayName = Player.DisplayName
-	local LocalUserId = Player.UserId
-
-	local IsAllowed = false
-
-	for _, v in ipairs(AllowUsers) do
-		if type(v) == "string" then
-			if v == LocalPlayerName or v == LocalDisplayName then
-				IsAllowed = true
-				break
-			end
-		elseif type(v) == "number" then
-			if v == LocalUserId then
-				IsAllowed = true
-				break
-			end
-		end
-	end
-
-	if not IsAllowed then
-		return nil
-	end
-
-	return self:MakeTab({TName, TIcon})
-end	
-		function Tab:AddSection(Configs, IconConfig)
+function Tab:AddSection(Configs, IconConfig)
     local SectionName = type(Configs) == "string" and Configs or Configs[1] or Configs.Name or Configs.Title or "Section"
     local Icon = nil
     
