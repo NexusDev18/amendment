@@ -1,0 +1,398 @@
+-- This script was decrypted by Shadow Debugging library 
+
+local _ = game:GetService('Players').LocalPlayer
+local _ = _G.SuperProtectionSystem
+
+pairs(_G)
+
+_G.SuperProtectionSystem = {
+    Tracks = {},
+    Connections = {},
+}
+
+local _ = game.PlaceId
+local _call7 = game:GetService('TweenService')
+local _call11 = game.Players.LocalPlayer:WaitForChild('PlayerGui')
+local _call13 = Instance.new('Sound')
+
+_call13.SoundId = 'rbxassetid://5515669992'
+_call13.Volume = 5
+_call13.Parent = game:GetService('SoundService')
+
+_call13:Play()
+_call13.Ended:Connect(function(_21, _21_2, _21_3, _21_4)
+    _call13:Destroy()
+end)
+
+local _call25 = _call11:FindFirstChild('NotificationGui')
+
+_call25.Name = 'NotificationGui'
+_call25.Parent = _call11
+
+local _call27 = Instance.new('Frame')
+
+_call27.Size = UDim2.new(0, 220, 0, 60)
+_call27.Position = UDim2.new(0, -200, 0, 20)
+_call27.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+_call27.BackgroundTransparency = 0.2
+_call27.BorderSizePixel = 1
+_call27.BorderColor3 = Color3.fromRGB(128, 128, 128)
+_call27.ClipsDescendants = true
+_call27.Parent = _call25
+
+local _call37 = Instance.new('UICorner', _call27)
+
+_call37.CornerRadius = UDim.new(0, 19)
+
+local _call41 = Instance.new('TextLabel')
+
+_call41.Size = UDim2.new(1, 0, 1, 0)
+_call41.Text = '\u{62a}\u{640}\u{645} \u{625}\u{639}\u{640}\u{627}\u{62f}\u{647} \u{62a}\u{637}\u{640}\u{648}\u{64a}\u{631} \u{627}\u{644}\u{633}\u{640}\u{6a9}\u{631}\u{628}\u{640}\u{62a} \u{645}\u{640}\u{646} \u{642}\u{650}\u{628}\u{640}\u{644} / MALIK30031 '
+_call41.TextColor3 = Color3.fromRGB(255, 255, 255)
+_call41.TextSize = 13
+_call41.TextWrapped = true
+_call41.BackgroundTransparency = 1
+_call41.Font = Enum.Font.GothamBold
+_call41.Parent = _call27
+
+local _call49 = Instance.new('Frame')
+
+_call49.Size = UDim2.new(1, 0, 0.1, 0)
+_call49.Position = UDim2.new(0, 9, 0.8, 0)
+_call49.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+_call49.BorderSizePixel = 0
+_call49.Parent = _call27
+
+local _call57 = Instance.new('UICorner', _call49)
+
+_call57.CornerRadius = UDim.new(0, 5)
+
+local _call61 = Instance.new('ImageLabel')
+
+_call61.Size = UDim2.new(0, 20, 0, 20)
+_call61.Position = UDim2.new(1, -213, 0, 5)
+_call61.BackgroundTransparency = 1
+_call61.Image = 'rbxassetid://132036502772790'
+_call61.Parent = _call27
+
+local _call75 = _call7:Create(_call27, TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+    Position = UDim2.new(0, 20, 0, 20),
+})
+
+_call75:Play()
+
+local _call87 = _call7:Create(_call49, TweenInfo.new(5, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), {
+    Size = UDim2.new(0, 0, 0.1, 0),
+})
+
+_call87:Play()
+task.spawn(function(_92, _92_2)
+    task.wait(5)
+
+    local _call105 = _call7:Create(_call27, TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+        Position = UDim2.new(0, -200, 0, _call27.Position.Y.Offset),
+    })
+
+    _call105:Play()
+    _call105.Completed:Wait()
+    _call27:Destroy()
+    print('\u{62a}\u{645} \u{628}\u{62f}\u{621} \u{633}\u{643}\u{631}\u{628}\u{62a} \u{627}\u{644}\u{62d}\u{645}\u{627}\u{64a}\u{629}!')
+end)
+task.wait(5)
+
+local _call117 = game:GetService('RunService')
+
+game:GetService('UserInputService')
+game:GetService('Workspace')
+
+local _LocalPlayer124 = game:GetService('Players').LocalPlayer
+local _ = _LocalPlayer124.Character
+local _call127 = Instance.new('ScreenGui')
+
+_call127.Name = 'SuperRingPartsGUI'
+_call127.ResetOnSpawn = false
+_call127.Parent = _LocalPlayer124:WaitForChild('PlayerGui')
+
+local _call131 = Instance.new('Frame')
+
+_call131.Size = UDim2.new(0, 180, 0, 360)
+_call131.Position = UDim2.new(0.5, -90, 0.5, -180)
+_call131.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+_call131.BorderSizePixel = 0
+_call131.Parent = _call127
+
+local _call139 = Instance.new('UICorner', _call131)
+
+_call139.CornerRadius = UDim.new(0, 15)
+_call131.Active = true
+_call131.Draggable = true
+
+local _call143 = Instance.new('UIStroke', _call131)
+
+_call143.Color = Color3.fromRGB(0, 170, 255)
+_call143.Thickness = 4
+_call143.Transparency = 0.2
+
+_call117.Heartbeat:Connect(function(_149, _149_2)
+    local _ = _call143.Thickness
+
+    error('line 16: attempt to compare number <= table')
+end)
+
+local _call152 = Instance.new('TextLabel', _call131)
+
+_call152.Size = UDim2.new(1, 0, 0, 30)
+_call152.Text = '\u{62d}\u{640}\u{645}\u{627}\u{64a}\u{640}\u{629} \u{645}\u{62a}\u{640}\u{642}\u{640}\u{62f}\u{645}\u{640}\u{629}'
+_call152.TextColor3 = Color3.fromRGB(0, 170, 255)
+_call152.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+_call152.Font = Enum.Font.SourceSansBold
+_call152.TextSize = 16
+
+Instance.new('UICorner', _call152)
+
+local _call164 = Instance.new('Frame', _call131)
+
+_call164.Size = UDim2.new(0.5, 0, 0, 2)
+_call164.Position = UDim2.new(0.25, 0, 0, 30)
+_call164.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+_call164.BorderSizePixel = 0
+
+local _call172 = Instance.new('UICorner', _call164)
+
+_call172.CornerRadius = UDim.new(0, 1)
+
+local _call176 = Instance.new('TextButton', _call131)
+
+_call176.Size = UDim2.new(0, 20, 0, 20)
+_call176.Position = UDim2.new(1, -25, 0, 5)
+_call176.Text = '-'
+_call176.BackgroundColor3 = Color3.fromRGB(205, 84, 75)
+_call176.TextColor3 = _call176.BackgroundColor3
+_call176.Font = Enum.Font.SourceSansBold
+_call176.TextSize = 14
+
+Instance.new('UICorner', _call176)
+_call176.MouseButton1Click:Connect(function(_191, _191_2, _191_3)
+    _call131:TweenSize(UDim2.new(0, 180, 0, 30), 'Out', 'Quad', 0.3, true)
+
+    _call176.Text = '+'
+
+    for _198, _198_2 in pairs(_call131:GetChildren())do
+        _198_2:IsA('TextButton')
+
+        local _ = _198_2 == _call176
+
+        _198_2.Visible = false
+    end
+
+    local _call203 = Instance.new('Sound')
+
+    _call203.SoundId = 'rbxassetid://12221967'
+    _call203.Parent = game:GetService('SoundService')
+
+    _call203:Play()
+    _call203.Ended:Connect(function(_209, _209_2, _209_3, _209_4, _209_5)
+        _call203:Destroy()
+    end)
+end)
+
+local _call213 = Instance.new('TextButton', _call131)
+
+_call213.Size = UDim2.new(0.8, 0, 0, 30)
+_call213.Position = UDim2.new(0.1, 0, 0.12, 0)
+_call213.Text = '\u{645}\u{627}\u{646}\u{640}\u{639} \u{641}\u{644}\u{640}\u{646}\u{642} | OFF'
+_call213.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+_call213.TextColor3 = Color3.new(0, 0, 0)
+_call213.Font = Enum.Font.SourceSansBold
+_call213.TextSize = 14
+
+Instance.new('UICorner', _call213)
+_call213.MouseEnter:Connect(function(_229, _229_2)
+    _call213:TweenSize(UDim2.new(0.85, 0, 0, 32), 'Out', 'Quad', 0.2, true)
+end)
+_call213.MouseLeave:Connect(function(_237, _237_2, _237_3, _237_4, _237_5)
+    _call213:TweenSize(UDim2.new(0.8, 0, 0, 30), 'Out', 'Quad', 0.2, true)
+end)
+
+local _call243 = Instance.new('TextButton', _call131)
+
+_call243.Size = UDim2.new(0.8, 0, 0, 30)
+_call243.Position = UDim2.new(0.1, 0, 0.22, 0)
+_call243.Text = '\u{645}\u{627}\u{646}\u{640}\u{639} \u{62c}\u{644}\u{640}\u{648}\u{633} | OFF'
+_call243.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+_call243.TextColor3 = Color3.new(0, 0, 0)
+_call243.Font = Enum.Font.SourceSansBold
+_call243.TextSize = 14
+
+Instance.new('UICorner', _call243)
+_call243.MouseEnter:Connect(function(_259, _259_2)
+    _call243:TweenSize(UDim2.new(0.85, 0, 0, 32), 'Out', 'Quad', 0.2, true)
+end)
+_call243.MouseLeave:Connect(function(_267, _267_2, _267_3, _267_4, _267_5)
+    _call243:TweenSize(UDim2.new(0.8, 0, 0, 30), 'Out', 'Quad', 0.2, true)
+end)
+
+local _call273 = Instance.new('TextButton', _call131)
+
+_call273.Size = UDim2.new(0.8, 0, 0, 30)
+_call273.Position = UDim2.new(0.1, 0, 0.32, 0)
+_call273.Text = '\u{645}\u{627}\u{646}\u{640}\u{639} \u{628}\u{627}\u{646}\u{640}\u{642} | OFF'
+_call273.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+_call273.TextColor3 = Color3.new(0, 0, 0)
+_call273.Font = Enum.Font.SourceSansBold
+_call273.TextSize = 14
+
+Instance.new('UICorner', _call273)
+_call273.MouseEnter:Connect(function(_289, _289_2)
+    _call273:TweenSize(UDim2.new(0.85, 0, 0, 32), 'Out', 'Quad', 0.2, true)
+end)
+_call273.MouseLeave:Connect(function(_297, _297_2, _297_3, _297_4, _297_5)
+    _call273:TweenSize(UDim2.new(0.8, 0, 0, 30), 'Out', 'Quad', 0.2, true)
+end)
+
+local _call303 = Instance.new('TextButton', _call131)
+
+_call303.Size = UDim2.new(0.8, 0, 0, 30)
+_call303.Position = UDim2.new(0.1, 0, 0.42, 0)
+_call303.Text = '\u{628}\u{627}\u{646}\u{640}\u{642} \u{639}\u{6a9}\u{640}\u{633}\u{64a} | OFF'
+_call303.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+_call303.TextColor3 = Color3.new(0, 0, 0)
+_call303.Font = Enum.Font.SourceSansBold
+_call303.TextSize = 14
+
+Instance.new('UICorner', _call303)
+_call303.MouseEnter:Connect(function(_319, _319_2)
+    _call303:TweenSize(UDim2.new(0.85, 0, 0, 32), 'Out', 'Quad', 0.2, true)
+end)
+_call303.MouseLeave:Connect(function(_327, _327_2, _327_3, _327_4, _327_5)
+    _call303:TweenSize(UDim2.new(0.8, 0, 0, 30), 'Out', 'Quad', 0.2, true)
+end)
+
+local _call333 = Instance.new('TextButton', _call131)
+
+_call333.Size = UDim2.new(0.8, 0, 0, 30)
+_call333.Position = UDim2.new(0.1, 0, 0.52, 0)
+_call333.Text = '\u{645}\u{627}\u{646}\u{640}\u{639} \u{645}\u{640}\u{635} | OFF'
+_call333.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+_call333.TextColor3 = Color3.new(0, 0, 0)
+_call333.Font = Enum.Font.SourceSansBold
+_call333.TextSize = 14
+
+Instance.new('UICorner', _call333)
+_call333.MouseEnter:Connect(function(_349, _349_2)
+    _call333:TweenSize(UDim2.new(0.85, 0, 0, 32), 'Out', 'Quad', 0.2, true)
+end)
+_call333.MouseLeave:Connect(function(_357, _357_2, _357_3, _357_4, _357_5)
+    _call333:TweenSize(UDim2.new(0.8, 0, 0, 30), 'Out', 'Quad', 0.2, true)
+end)
+
+local _call363 = Instance.new('TextButton', _call131)
+
+_call363.Size = UDim2.new(0.8, 0, 0, 30)
+_call363.Position = UDim2.new(0.1, 0, 0.62, 0)
+_call363.Text = '\u{645}\u{640}\u{635} \u{639}\u{643}\u{640}\u{633}\u{64a} | OFF'
+_call363.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+_call363.TextColor3 = Color3.new(0, 0, 0)
+_call363.Font = Enum.Font.SourceSansBold
+_call363.TextSize = 14
+
+Instance.new('UICorner', _call363)
+_call363.MouseEnter:Connect(function(_379, _379_2)
+    error('internal 579: <25ms: infinitelooperror>')
+end)
+_call363.MouseLeave:Connect(function(_384, _384_2, _384_3, _384_4, _384_5)
+    error('internal 579: <25ms: infinitelooperror>')
+end)
+
+local _call387 = Instance.new('TextButton', _call131)
+
+_call387.Size = UDim2.new(0.8, 0, 0, 30)
+_call387.Position = UDim2.new(0.1, 0, 0.72, 0)
+_call387.Text = '\u{645}\u{627}\u{646}\u{640}\u{639} \u{62c}\u{644}\u{640}\u{62e} | OFF'
+_call387.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+_call387.TextColor3 = Color3.new(0, 0, 0)
+_call387.Font = Enum.Font.SourceSansBold
+_call387.TextSize = 14
+
+Instance.new('UICorner', _call387)
+_call387.MouseEnter:Connect(function(_403, _403_2)
+    error('internal 579: <25ms: infinitelooperror>')
+end)
+_call387.MouseLeave:Connect(function(_408, _408_2, _408_3, _408_4, _408_5) end)
+
+local _call410 = Instance.new('Frame', _call131)
+
+_call410.Size = UDim2.new(0.5, 0, 0, 2)
+_call410.Position = UDim2.new(0.25, 0, 0.84, 0)
+_call410.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+_call410.BorderSizePixel = 0
+
+local _call418 = Instance.new('UICorner', _call410)
+
+_call418.CornerRadius = UDim.new(0, 1)
+
+local _call422 = Instance.new('TextButton', _call131)
+
+_call422.Size = UDim2.new(0.8, 0, 0, 30)
+_call422.Position = UDim2.new(0.1, 0, 0.88, 0)
+_call422.Text = '\u{627}\u{62e}\u{640}\u{62a}\u{640}\u{641}\u{627}\u{621} | OFF'
+_call422.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+_call422.TextColor3 = Color3.new(0, 0, 0)
+_call422.Font = Enum.Font.SourceSansBold
+_call422.TextSize = 14
+
+Instance.new('UICorner', _call422)
+_call422.MouseEnter:Connect(function(_438, _438_2) end)
+_call422.MouseLeave:Connect(function(_442, _442_2, _442_3, _442_4, _442_5) end)
+
+local _ = _G.InvisConnections
+local _Character443 = _LocalPlayer124.Character
+
+_Character443:WaitForChild('Humanoid')
+_Character443:WaitForChild('HumanoidRootPart')
+
+for _450, _450_2 in pairs(_Character443:GetDescendants())do
+    _450_2:IsA('BasePart')
+
+    local _ = _450_2.Transparency
+end
+
+local _call456 = _call117.Heartbeat:Connect(function(_457, _457_2, _457_3) end)
+local _call460 = _LocalPlayer124.CharacterAdded:Connect(function(_461, _461_2) end)
+
+_G.InvisConnections = {
+    [1] = _call456,
+    [2] = _call460,
+}
+
+_call422.MouseButton1Click:Connect(function(_465, _465_2, _465_3, _465_4) end)
+_call213.MouseButton1Click:Connect(function(_469, _469_2, _469_3, _469_4, _469_5) end)
+
+local _Character470 = _LocalPlayer124.Character
+
+_Character470:WaitForChild('Humanoid')
+_Character470:WaitForChild('HumanoidRootPart')
+_call243.MouseButton1Click:Connect(function(_478, _478_2, _478_3, _478_4) end)
+_LocalPlayer124.CharacterAdded:Connect(function(_482, _482_2) end)
+_call273.MouseButton1Click:Connect(function(_486, _486_2, _486_3, _486_4) end)
+_LocalPlayer124.CharacterAdded:Connect(function(_490, _490_2, _490_3, _490_4) end)
+_call303.MouseButton1Click:Connect(function(_494, _494_2, _494_3, _494_4, _494_5) end)
+_LocalPlayer124.CharacterAdded:Connect(function(_498) end)
+
+local _ = game.Players.LocalPlayer
+local _ = game.Players.LocalPlayer
+local _ = Enum.AnimationPriority.Action4
+
+_call333.MouseButton1Click:Connect(function(_508) end)
+
+local _ = game:GetService('Players').LocalPlayer
+local _ = Enum.AnimationPriority.Action4
+
+_call363.MouseButton1Click:Connect(function() end)
+
+local _ = _LocalPlayer124.Character
+
+_LocalPlayer124.Character:WaitForChild('Humanoid')
+_LocalPlayer124.CharacterAdded:Connect(function(_525, _525_2, _525_3, _525_4, _525_5) end)
+_call387.MouseButton1Click:Connect(function(_529, _529_2, _529_3) end)
+_LocalPlayer124.CharacterAdded:Connect(function(_533) end)
